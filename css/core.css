@@ -1,0 +1,308 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/********************************
+*
+*  R E S E T
+*
+********************************/
+
+@-ms-viewport{width:device-width}@viewport{width:device-width}/*! normalize.css v3.0.1 | MIT License | git.io/normalize */html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background:0 0}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:700}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0}input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{height:auto}input[type=search]{-webkit-appearance:textfield;box-sizing:content-box}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:700}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}
+
+/********************************
+*
+*  G L O B A L S
+*
+********************************/
+
+html {
+	box-sizing: border-box;
+		height: 100%;
+}
+
+	*,
+	*:before,
+	*:after {
+	  box-sizing: inherit; 
+}
+
+body {
+   	color:#767679;
+	font: 300 100%/1.5  "adelle-sans", sans-serif; 
+	height: 100%;
+	text-rendering: optimizelegibility;
+}
+
+img, 
+figure, 
+iframe {
+  display: block;
+  width: 100%;
+}
+
+iframe {border: none;}
+
+figure {margin: 0;}
+
+a {
+  color: inherit;
+  font-weight: inherit;
+  outline: none;
+  text-decoration: none;
+}
+
+a:link 
+a:visited {
+  text-decoration: none;
+}
+
+
+
+/********************************
+*
+*  T Y P O G R A P H Y
+*
+********************************/
+
+
+h1 {
+	font-family: "adelle",serif;
+	font-style: italic;
+	font-weight: 600;
+	font-size: 2.625em; /* 42px / 16px */
+	line-height: 1.25;
+	color: #F2913B;
+	text-shadow: 1px 1px 2px #333333;
+}
+
+@media screen and (max-width: 57.1875em) {
+h1 {
+	font-size: 2em; /* 32px / 16px */
+}
+}
+/********************************
+*
+*  I C O N S
+*
+********************************/
+
+@font-face {
+	font-family: 'icomoon';
+	src:url('../fonts/icomoon.eot?2ov8yr');
+	src:url('../fonts/icomoon.eot?#iefix2ov8yr') format('embedded-opentype'),
+		url('../fonts/icomoon.woff?2ov8yr') format('woff'),
+		url('../fonts/icomoon.ttf?2ov8yr') format('truetype'),
+		url('../fonts/icomoon.svg?2ov8yr#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-envelope-o:before {content: "\f003";}
+.icon-close:before {content: "\f00d";}
+.icon-chevron-up:before {content: "\f077";}
+.icon-chevron-down:before {content: "\f078";}
+.icon-phone:before {content: "\f095";}
+.icon-bars:before {content: "\f0c9";}
+
+/**************************************
+ *
+ *	  N A V
+ *
+ *************************************/
+.top-bar {
+	width: 100%;
+	background-color:#000;
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	padding: 1em 0;
+	border-bottom: 1px solid #CCC;
+	z-index: 1000;
+}
+
+/* stops page jump when opening/closing nav */
+#primary:before {
+  display: block; 
+  content: " "; 
+  margin-top: -7.53125em; /* 107px / 16px */
+  height: 7.53125em; /* 107px / 16px */
+  visibility: hidden; 
+}
+
+.logo {
+	background-color:#A2ECE5;
+	display: block;
+	float: left;
+	max-width: 15em;
+	vertical-align:middle;
+}
+
+.nav-bar {
+	background-color:#F5F5B9;
+	border-top: none;
+	float:right;
+	text-align:center;
+	vertical-align:middle;
+}
+
+.nav-bar ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.nav-bar li {
+	display: inline-block;
+	padding-right: 1.5em;
+}
+
+.nav-bar a:hover {
+	color: #F2913B;
+}
+
+
+
+.active {
+	color: #F2913B;
+	text-decoration: none;
+}
+
+
+/* 915px / 16px */
+@media screen and (max-width: 57.1875em) {
+	.nav-bar,
+	.logo {
+		float:none;
+	}
+	.logo {
+		margin: 0 auto;
+	}
+	.nav-bar {	
+		width:100%;
+	}
+	.nav-bar li:last-child {
+		padding-right: 0;
+	}
+	.top-bar .wrapper {
+		padding-right: 1.5em;
+	}
+}
+
+
+/********************************
+*
+*  I N T R O
+*
+********************************/	
+
+.full-screen {
+ 	width:100%;
+	height:100%;
+	background-image: url(../images/chimney-sweep.jpg);
+	background-repeat: no-repeat; 
+	background-position: center;
+	background-attachment: scroll;
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+	overflow:hidden;
+	position:relative;
+}
+
+.position {
+	text-align:center;
+	max-width: 50%;
+    margin: 0 auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.intro-logo {
+	max-width:20em;
+	margin: 0 auto;
+	padding-bottom:1em;
+}
+
+@media screen and (max-width: 57.1875em) {
+.position {
+	max-width: 90%;
+}
+
+.intro-logo {
+	max-width:12em;
+}
+}
+
+/**************************************
+ *
+ *	  B A C K G R O U N D    I M A G E S
+ *
+ *************************************/	
+ 
+/**************************************
+ *
+ *	  C O N T E N T    B L O C K S
+ *
+ *************************************/
+
+.wrapper {
+	max-width: 70em;
+	margin: 0 auto;
+	padding-left: 1.5em;
+	position:relative;
+}
+
+.group:before, 
+.group:after,
+.wrapper:before,
+.wrapper:after {
+		content: "";
+		display: table;
+}
+
+.group:after,
+.wrapper:after {
+		clear: both;
+}
+
+.pad-y {
+	padding-top: 3em;
+	padding-bottom: 3em;
+}
+
+	
+/**************************************
+ *
+ *	 S E C T I O N S
+ *
+ *************************************/	
+
+/**************************************
+ *
+ *	 F O O T E R
+ *
+ *************************************/	
+ 
+ /**************************************
+ *
+ *	  M E D I A    Q U E R I E S
+ *
+ *************************************/
+
