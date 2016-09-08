@@ -23,18 +23,18 @@ html {
 	*,
 	*:before,
 	*:after {
-	  box-sizing: inherit; 
+	  box-sizing: inherit;
 }
 
 body {
    	color:#767679;
-	font: 300 100%/1.5  "adelle-sans", sans-serif; 
+	font: 300 100%/1.5  "adelle-sans", sans-serif;
 	height: 100%;
 	text-rendering: optimizelegibility;
 }
 
-img, 
-figure, 
+img,
+figure,
 iframe {
   display: block;
   width: 100%;
@@ -51,7 +51,7 @@ a {
   text-decoration: none;
 }
 
-a:link 
+a:link
 a:visited {
   text-decoration: none;
 }
@@ -83,7 +83,7 @@ h2 {
 	line-height: 1.25;
 	color: #d98a0c;
 	text-align:center;
-	
+
 }
 h3 {
 	font-weight: 600;
@@ -151,7 +151,8 @@ h2 {
 	position: absolute;
 }
 
-.arrow span {
+.arrow span,
+.orange-arrow {
 	color: #d98a0c;
 	font-size:1.5em;
 }
@@ -159,19 +160,20 @@ h2 {
 footer .icon-envelope-o {
 	color: #FFF;
 	line-height: 1.75em !important;
-	
+
 }
 
 footer .icon-phone {
 	color: #FFF;
 	line-height: 2em !important;
-	
+
 }
 
 .tel-number {
 	display:block;
 	color:#fff;
 	text-decoration:none;
+	margin-bottom: 1.5em;
 	font-weight:600;
 	font-size:1.25em; /* 21px / 16px */
 	line-height:1.5em; /* 26px / 16px */
@@ -188,7 +190,7 @@ footer .icon-phone {
 	text-align: center;
 	display: inline-block;
 	height: 2em;
-	width: 2em; 
+	width: 2em;
  }
 
 
@@ -211,11 +213,11 @@ footer .icon-phone {
 
 /* stops page jump when opening/closing nav */
 #primary:before {
-  display: block; 
-  content: " "; 
+  display: block;
+  content: " ";
   margin-top: -7.53125em; /* 107px / 16px */
   height: 7.53125em; /* 107px / 16px */
-  visibility: hidden; 
+  visibility: hidden;
 }
 
 .logo {
@@ -267,7 +269,7 @@ footer .icon-phone {
 	.logo {
 		margin: 0 auto;
 	}
-	.nav-bar {	
+	.nav-bar {
 		width:100%;
 	}
 	.nav-bar li:last-child {
@@ -283,13 +285,13 @@ footer .icon-phone {
 *
 *  I N T R O
 *
-********************************/	
+********************************/
 
 .full-screen {
  	width:100%;
 	height:100%;
 	background-image: url(../images/chimney-sweep.jpg);
-	background-repeat: no-repeat; 
+	background-repeat: no-repeat;
 	background-position: center;
 	background-attachment: scroll;
   	-webkit-background-size: cover;
@@ -329,9 +331,9 @@ footer .icon-phone {
  *
  *	  B A C K G R O U N D    I M A G E S
  *
- *************************************/	
- 
- 
+ *************************************/
+
+
  .image-style {
 	margin: 0 0 2em 0;
 	border-bottom:0.5em solid #d98a0c;
@@ -360,25 +362,25 @@ padding-left: 1.5em;
 .col-3-4 {width: 75%;}
 
 @media screen and (max-width:48em) {
-	
+
 .col-1-2, .col-1-3, .col-2-3, .col-1-4, .col-3-4 {width: 100%;}
 
 .col-1-4  {width: 50%;}
 
 }
 
-.anchor-link:before { 
-	display: block; 
-	content: " "; 
-	margin-top: -5.1875em; 
-	height: 5.1875em; 
-	visibility: hidden; 
+.anchor-link:before {
+	display: block;
+	content: " ";
+	margin-top: -5.1875em;
+	height: 5.1875em;
+	visibility: hidden;
 }
 
 .gray-bar {
 	width: 100%;
 	background-color: #e2e4e5;
-	
+
 }
 
 .wrapper {
@@ -388,7 +390,7 @@ padding-left: 1.5em;
 	position:relative;
 }
 
-.group:before, 
+.group:before,
 .group:after,
 .wrapper:before,
 .wrapper:after {
@@ -410,13 +412,13 @@ padding-left: 1.5em;
  *
  *	 S E C T I O N S
  *
- *************************************/	
+ *************************************/
 
 /**************************************
  *
  *	 F O O T E R
  *
- *************************************/	
+ *************************************/
  footer {
 	background: #000;
 	color: #fff;
@@ -426,9 +428,12 @@ padding-left: 1.5em;
 	padding-top:3em;
 	padding-bottom:6em;
 }
+
+footer .wrapper {
+	padding-left: 0;
+}
  /**************************************
  *
  *	  M E D I A    Q U E R I E S
  *
  *************************************/
-
